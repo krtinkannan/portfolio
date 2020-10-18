@@ -1,0 +1,11 @@
+<?php
+	$name= _POST['name'];
+	$email=_POST['email'];
+$email_from= "kkrtin@gmail.com";
+$email_subject="new submission"
+$email_body = "name= $name \n",
+	         "emal= $email \n";
+$to = onyxphotography1@gmail.com;
+mail($to,$email_subject,$email_body);
+header("Location: first.html");
+?>
